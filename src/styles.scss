@@ -28,5 +28,21 @@ h2, p {
 }
 
 .dark-theme-color {
-    color: rgba(137, 188, 217, 1);
+    color: rgb(38, 46, 52);
+}
+
+.theme-color {
+    color: rgb(137, 188, 217);
+}
+
+button {
+    all: unset;
+    font-family: "Josefin Sans", sans-serif;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    color: rgb(38, 46, 52);
 }

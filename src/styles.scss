@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: "Anta";
     src: url("assets/fonts/Anta/Anta-Regular.ttf") format("truetype");
@@ -45,4 +49,8 @@ a {
     text-decoration: none;
     font-family: "Josefin Sans", sans-serif;
     color: rgb(38, 46, 52);
+}
+
+.anta-font {
+    font-family: "Anta", sans-serif;
 }

@@ -1,3 +1,20 @@
+$header-height: 104px;
+
 section {
+    &:not(#above-the-fold) {
+        margin-bottom: 120px;
+    }
+}
+
+#above-the-fold {
+    min-height: calc(100vh - #{$header-height});
+    margin-bottom: 0;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    height: $header-height;
+    z-index: 100;
     margin-bottom: 120px;
 }

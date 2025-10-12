@@ -1,0 +1,81 @@
+h3 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+    max-width: 690px;
+}
+
+button {
+    padding: 16px 24px;
+    border: solid 2px rgb(137, 188, 217);
+    border-radius: 30px;
+    color: rgb(137, 188, 217);
+}
+
+.content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 32px 64px;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.project-window {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.text-and-duration {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.explanation {
+    display: flex;
+    gap: 32px;
+
+    img {
+        height: 26px;
+        width: 29px;
+    }
+}
+
+.gap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.technologies {
+    display: flex;
+    gap: 24px;
+
+    img {
+        height: 56px;
+        width: auto;
+    }
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.background-button {
+    background-color: rgb(137, 188, 217);
+    color: rgb(45, 56, 63);
+}

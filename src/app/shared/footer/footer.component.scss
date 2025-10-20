@@ -34,3 +34,21 @@ a, p {
 .c-white {
     color: rgb(248, 245, 236);
 }
+
+.github-hover {
+    &:hover {
+        content: url("./../../../assets/img/footer/github-hover.svg");
+    }
+}
+
+.mail-hover {
+    &:hover {
+        content: url("./../../../assets/img/footer/mail-hover.svg");
+    }
+}
+
+.linkedin-hover {
+    &:hover {
+        content: url("./../../../assets/img/footer/linkedin-hover.svg");
+    }
+}

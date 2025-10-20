@@ -26,6 +26,12 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: color 0.25s ease-in-out;
+
+    &:hover {
+        transition: color 0.25s ease-in-out;
+        color: rgb(248, 245, 236);
+    }
 }
 
 .project-name-active {

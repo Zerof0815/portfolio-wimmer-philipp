@@ -20,6 +20,7 @@ button {
     padding: 0 24px;
     font-size: 18px;
     color: rgb(128, 128, 128);
+    cursor: auto;
 }
 
 .contact-me {
@@ -109,6 +110,20 @@ textarea:focus {
     align-items: center;
     gap: 8px;
     margin: 24px 0;
+
+    img {
+        height: 28px;
+        width: 28px;
+        transition: transform 0.25s ease-in-out;
+        &:hover {
+            height: 28px;
+            width: 28px;
+            transition: transform 0.25s ease-in-out;
+            transform: rotate(10deg);
+            cursor: pointer;
+            content: url("./../../assets/img/contact/unchecked-hover.png");
+        }
+    }
 }
 
 .arrow-wrap {

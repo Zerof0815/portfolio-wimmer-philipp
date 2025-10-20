@@ -40,6 +40,13 @@ h2 {
             align-items: center;
             gap: 5px;
             margin-bottom: 24px;
+
+            img {
+                transition: transform 0.25s ease-in-out;
+                &:hover {
+                    transform: scaleX(1.1);
+                }
+            }
         }
 
         .link-section {
@@ -77,5 +84,32 @@ h2 {
         &:hover::after {
             background: rgba(255, 255, 255, 0.1);
         }
+    }
+}
+
+.mail-hover {
+    height: 30px;
+    width: 30px;
+
+    &:hover {
+        content: url("./../../assets/img/atf/mail-hover.png");
+    }
+}
+
+.github-hover {
+    height: 30px;
+    width: 30px;
+
+    &:hover {
+        content: url("./../../assets/img/atf/github-hover.png");
+    }
+}
+
+.linkedin-hover {
+    height: 30px;
+    width: 30px;
+    
+    &:hover {
+        content: url("./../../assets/img/atf/linkedin-hover.png");
     }
 }

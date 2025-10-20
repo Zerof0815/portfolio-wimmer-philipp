@@ -20,6 +20,6 @@ export class AppComponent {
   title = 'wimmer-philipp';
 
   constructor(private viewportScroller: ViewportScroller) {
-    viewportScroller.setOffset([0, 160]);
+    viewportScroller.setOffset([0, 120]);
   }
 }

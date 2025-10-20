@@ -12,7 +12,11 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+
+    img {
+        height: 32px;
+        width: auto;
+    }
 }
 
 .links-container {
@@ -26,7 +30,7 @@ nav {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 104px;
+    height: 80px;
     background-color: rgb(137, 188, 217);
     z-index: 10;
 }

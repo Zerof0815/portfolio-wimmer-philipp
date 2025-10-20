@@ -110,3 +110,28 @@ textarea:focus {
     gap: 8px;
     margin: 24px 0;
 }
+
+.arrow-wrap {
+    position: absolute;
+    right: 64px;
+
+    .arrow-up {
+        display: block;
+        cursor: pointer;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(255, 255, 255, 0);
+        transition: background 0.25s ease, opacity 0.25s ease;
+        pointer-events: none;
+        z-index: 2;
+        border-radius: 20px;
+    }
+
+    &:hover::after {
+        background: rgba(255, 255, 255, 0.1);
+    }
+}

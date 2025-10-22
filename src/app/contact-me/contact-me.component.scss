@@ -47,10 +47,50 @@ button {
     gap: 24px;
 }
 
-.email-phone {
+.email {
     display: flex;
     align-items: center;
     gap: 16px;
+    color: rgb(248, 245, 236);
+    font-size: 18px;
+    
+    img {
+        height: 32px;
+        width: 32px;
+    }
+    
+    &:hover {
+        color: rgb(137, 188, 217);
+
+        img {
+            content: url("./../../assets/img/contact/email-hover.png");
+            height: 32px;
+            width: 32px;
+        }
+    }
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: rgb(248, 245, 236);
+    font-size: 18px;
+
+    img {
+        height: 32px;
+        width: 32px;
+    }
+    
+    &:hover {
+        color: rgb(137, 188, 217);
+
+        img {
+            content: url("./../../assets/img/contact/phone-hover.png");
+            height: 32px;
+            width: 32px;
+        }
+    }
 }
 
 .width-50pc {
@@ -115,6 +155,7 @@ textarea:focus {
         height: 28px;
         width: 28px;
         transition: transform 0.25s ease-in-out;
+
         &:hover {
             height: 28px;
             width: 28px;
@@ -132,7 +173,6 @@ textarea:focus {
 
     .arrow-up {
         display: block;
-        cursor: pointer;
     }
 
     &::after {

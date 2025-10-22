@@ -5,14 +5,14 @@
         <div class="contact-data">
             <p class="width-50pc">Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work. Example: Feel free to get in touch with job offers or opportunities such as: ...</p>
             <div class="email-phone-container">
-                <div class="email-phone">
+                <a class="email" href="">
                     <img src="assets/img/contact/email-icon.png" alt="">
-                    <p>E-mail: wimmer.philipp&#64;gmx.com</p>
-                </div>
-                <div class="email-phone">
+                    E-mail: wimmer.philipp&#64;gmx.com
+                </a>
+                <a class="phone" href="">
                     <img src="assets/img/contact/phone-icon.png" alt="">
-                    <p>Tel: +43660/4488501</p>
-                </div>
+                    Tel: +43660/4488501
+                </a>
             </div>
         </div>
         <form class="contact-form">
@@ -26,7 +26,6 @@
                     <input type="email" id="email" name="email" [(ngModel)]="formData.email" required>
                 </div>
             </div>
-
             <div class="input-group">
                 <label for="message">Deine Nachricht</label>
                 <textarea id="message" name="message" rows="5" [(ngModel)]="formData.message" required></textarea>
@@ -42,6 +41,8 @@
         <button>Senden</button>
     </div>
     <div class="arrow-wrap">
-        <img class="arrow-up" src="assets/img/contact/arrow-up-icon.png" alt="">
+        <a [routerLink]="[]" fragment="above-the-fold">
+            <img class="arrow-up" src="assets/img/contact/arrow-up-icon.png" alt="">
+        </a>
     </div>
 </div>

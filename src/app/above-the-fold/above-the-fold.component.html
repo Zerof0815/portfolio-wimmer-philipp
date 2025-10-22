@@ -1,6 +1,10 @@
 <div class="max-width-container">
     <div class="above-the-fold">
-        <img class="my-picture" src="assets/img/atf/stiker-4574586_1280.png" alt="">
+        <div class="my-picture-container">
+            <img class="shape shape-default" src="assets/img/atf/shape.png" alt="">
+            <img class="shape shape-hover" src="assets/img/atf/shape-hover.png" alt="">
+            <img class="my-picture" src="assets/img/atf/stiker-4574586_1280.png" alt="">
+        </div>
         <div class="info-section">
             <div class="logo-link-section">
                 <div class="logo">
@@ -23,7 +27,9 @@
             <h1>Philipp Wimmer</h1>
             <h2>FRONTEND DEVELOPER</h2>
             <div class="arrow-wrap">
-                <img class="arrow-down" src="assets/img/atf/arrow-down.png" alt="">
+                <a [routerLink]="[]" fragment="why-me">
+                    <img class="arrow-down" src="assets/img/atf/arrow-down.png" alt="">
+                </a>
             </div>
         </div>
     </div>

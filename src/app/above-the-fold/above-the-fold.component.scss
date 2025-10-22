@@ -19,9 +19,41 @@ h2 {
     padding: 0 64px;
 }
 
-.my-picture {
-    height: calc(1280px/2.5);
-    width: calc(879px/2.5);
+.my-picture-container {
+    position: relative;
+    height: calc(1280px / 2);
+    width: calc(879px / 2);
+
+    .shape {
+        position: absolute;
+        bottom: -60px;
+        left: -50px;
+        width: calc(589px * 0.9);
+        height: calc(650px * 0.9);
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .shape-hover {
+        opacity: 0;
+    }
+
+    &:hover {
+        .shape-hover {
+            opacity: 1;
+        }
+        
+        .shape-default {
+            opacity: 0;
+        }
+    }
+
+    .my-picture {
+        position: absolute;
+        bottom: -70px;
+        height: calc(1280px / 2);
+        width: calc(879px / 2);
+        pointer-events: none;
+    }
 }
 
 .info-section {

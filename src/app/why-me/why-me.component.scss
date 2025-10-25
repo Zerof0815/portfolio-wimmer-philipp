@@ -70,3 +70,40 @@ h1 {
         background-color: rgba(255, 255, 255, 0.1);
     }
 }
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    button {
+        display: none;
+    }
+
+    .location {
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+
+        p, span {
+            font-size: 18px;
+        }
+    }
+
+    .why-me-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .complete-icon {
+        content: url("./../../assets/img/why-me/location-mobile.png");
+        height: 32px;
+        width: auto;
+    }
+
+    .why-me-text {
+        text-align: center;
+        width: 80vw;
+    }
+}

@@ -8,11 +8,12 @@ import { MyProjectsComponent } from "./my-projects/my-projects.component";
 import { HeaderComponent } from "./shared/header/header.component";
 import { FooterComponent } from "./shared/footer/footer.component";
 import { ContactMeComponent } from "./contact-me/contact-me.component";
+import { MobileComponent } from "./above-the-fold/mobile/mobile.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, AboveTheFoldComponent, WhyMeComponent, MySkillsComponent, MyProjectsComponent, HeaderComponent, FooterComponent, ContactMeComponent],
+  imports: [CommonModule, RouterOutlet, AboveTheFoldComponent, WhyMeComponent, MySkillsComponent, MyProjectsComponent, HeaderComponent, FooterComponent, ContactMeComponent, MobileComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -70,3 +70,9 @@ nav {
         justify-content: space-evenly;
     }
 }
+
+@media (max-width: 1000px) {
+    .background {
+        display: none;
+    }
+}

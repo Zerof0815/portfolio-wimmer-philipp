@@ -18,3 +18,9 @@ section {
     z-index: 100;
     margin-bottom: 120px;
 }
+
+@media (max-width: 1000px) {
+    .sticky-header {
+        display: none;
+    }
+}

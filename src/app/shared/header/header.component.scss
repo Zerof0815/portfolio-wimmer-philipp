@@ -64,3 +64,9 @@ nav {
     background-color: rgb(137, 188, 217);
     z-index: 10;
 }
+
+@media (max-width: 1130px) {
+    .links-container {
+        justify-content: space-evenly;
+    }
+}

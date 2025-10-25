@@ -60,3 +60,10 @@ p {
         width: auto;
     }
 }
+
+@media (max-width: 1130px) {
+    .content {
+        flex-direction: column;
+        padding: 32px 64px;
+    }
+}

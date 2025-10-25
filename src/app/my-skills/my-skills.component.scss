@@ -56,3 +56,36 @@ h1 {
         height: 50px;
     }
 }
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .content {
+        flex-direction: column;
+        width: initial;
+    }
+
+    .skill-icons {
+        width: 80vw;
+        justify-content: center;
+
+        img {
+            height: 56px;
+            width: auto;
+        }
+    }
+
+    .ellipse {
+        display: none;
+    }
+
+    .currently-learning {
+        margin-top: 50px;
+    }
+
+    .c-blue {
+        color: rgb(137, 188, 217);
+    }
+}

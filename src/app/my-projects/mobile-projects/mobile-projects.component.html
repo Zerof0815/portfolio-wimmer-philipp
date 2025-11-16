@@ -1,0 +1,19 @@
+<div id="my-projects" class="my-projects">
+    <h1>Meine Projekte</h1>
+    <div class="project-names">
+        @for (project of projects; track $index) {
+            <button
+                class="project-names-box"
+                [ngClass]="{'project-name-active': selectedProjectId === project.id}"
+                (click)="selectProject(project.id)"
+            >
+                {{project.id}}. {{project.name}}
+            </button>
+        }
+    </div>
+    <div class="projects-container">
+        <app-join *ngIf="selectedProjectId === 1"></app-join>
+        <app-el-pollo-loco *ngIf="selectedProjectId === 2"></app-el-pollo-loco>
+        <app-ongoing-projects *ngIf="selectedProjectId === 3"></app-ongoing-projects>
+    </div>
+</div>

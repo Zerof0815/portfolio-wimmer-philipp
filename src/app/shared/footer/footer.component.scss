@@ -7,7 +7,7 @@ a, p {
     justify-content: space-between;
     align-items: end;
     width: 100%;
-    height: 124px;
+    min-height: 124px;
     background-color: rgb(137, 188, 217);
     padding: 20px 64px;
 }
@@ -25,10 +25,15 @@ a, p {
     gap: 5px;
 }
 
-.legal-notice {
+.legal-notice-top {
     p {
         margin-top: 16px;
     }
+}
+
+.legal-notice-bottom {
+
+    display: none;
 }
 
 .c-white {
@@ -50,5 +55,33 @@ a, p {
 .linkedin-hover {
     &:hover {
         content: url("./../../../assets/img/footer/linkedin-hover.svg");
+    }
+}
+
+@media (max-width: 750px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .legal-notice-top {
+        display: none;
+    }
+
+    .legal-notice-bottom {
+        display: flex;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .footer {
+        padding: 20px 0;
+    }
+
+    .legal-notice-bottom {
+        gap: 16px;
     }
 }

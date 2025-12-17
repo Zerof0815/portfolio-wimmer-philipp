@@ -156,3 +156,109 @@ button {
         margin-right: auto;
     }
 }
+
+@media (max-width: 800px) {
+
+    h3 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 17px;
+        max-width: 100%;
+    }
+
+    .content {
+        padding: 24px 32px;
+        gap: 32px;
+    }
+
+    .project-description {
+        gap: 24px;
+    }
+
+    .explanation {
+        gap: 20px;
+    }
+
+    .text-and-duration {
+        gap: 16px;
+    }
+
+    .gap {
+        gap: 12px;
+    }
+
+    .button-container-mobile {
+        gap: 24px;
+    }
+
+    .technologies-mobile h3 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .technologies-mobile {
+        margin-top: 12px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    button {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    .content {
+        padding: 16px;
+        gap: 24px;
+    }
+
+    .explanation {
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .explanation img {
+        height: 18px;
+        width: 18px;
+    }
+
+    .gap {
+        gap: 8px;
+    }
+
+    .text-and-duration {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .button-container-mobile {
+        gap: 12px;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .project-window img {
+        width: 100%;
+        height: auto;
+    }
+
+    .technologies-mobile h3 {
+        font-size: 32px;
+    }
+
+    .technologies-mobile p {
+        font-size: 14px;
+    }
+}

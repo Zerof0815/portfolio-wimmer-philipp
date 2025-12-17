@@ -58,8 +58,9 @@ h1 {
 }
 
 @media (max-width: 1000px) {
-    h1 {
-        font-size: 32px;
+
+    .learning-text p {
+        font-size: 16px;
     }
 
     .content {
@@ -87,5 +88,16 @@ h1 {
 
     .c-blue {
         color: rgb(137, 188, 217);
+    }
+}
+
+@media (max-width: 750px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .currently-learning {
+        width: auto;
     }
 }

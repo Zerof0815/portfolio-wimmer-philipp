@@ -38,7 +38,7 @@ h1 {
 .why-me-section {
     display: flex;
     align-items: start;
-    width: 860px;
+    max-width: 860px;
     gap: 48px;
 }
 
@@ -72,9 +72,6 @@ h1 {
 }
 
 @media (max-width: 1000px) {
-    h1 {
-        font-size: 32px;
-    }
 
     button {
         display: none;
@@ -82,7 +79,6 @@ h1 {
 
     .location {
         justify-content: center;
-        flex-direction: column;
         gap: 10px;
 
         p, span {
@@ -98,12 +94,31 @@ h1 {
 
     .complete-icon {
         content: url("./../../assets/img/why-me/location-mobile.png");
-        height: 32px;
+        height: 40px;
         width: auto;
     }
 
     .why-me-text {
         text-align: center;
         width: 80vw;
+        
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .why-me-section {
+        width: 100%;
+    }
+
+    .location {
+        width: 100%;
     }
 }

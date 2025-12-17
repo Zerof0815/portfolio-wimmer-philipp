@@ -190,3 +190,153 @@ textarea:focus {
         background: rgba(255, 255, 255, 0.1);
     }
 }
+
+@media (max-width: 1000px) {
+
+    h1 {
+        font-size: 52px;
+        margin-bottom: 40px;
+    }
+
+    .contact-container {
+        width: 100%;
+        max-width: 800px;
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+
+    .contact-data {
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .width-50pc {
+        width: 60%;
+    }
+
+    .contact-form {
+        font-size: 16px;
+    }
+
+    input,
+    textarea {
+        font-size: 17px;
+        padding: 22px;
+    }
+
+    button {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .contact-container {
+        width: 100%;
+        padding: 0 32px;
+        box-sizing: border-box;
+    }
+
+    .contact-data {
+        gap: 32px;
+        margin-bottom: 32px;
+    }
+
+    .width-50pc {
+        width: 100%;
+    }
+
+    .input-row {
+        gap: 12px;
+    }
+
+    input,
+    textarea {
+        padding: 20px;
+        font-size: 17px;
+    }
+
+    button {
+        font-size: 17px;
+    }
+
+    .arrow-wrap {
+        right: 32px;
+    }
+
+    .contact-data {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .contact-data {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .email,
+    .phone {
+        font-size: 16px;
+
+        img {
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+    .contact-form {
+        font-size: 16px;
+        gap: 20px;
+    }
+
+    .input-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    input,
+    textarea {
+        padding: 18px;
+        font-size: 16px;
+    }
+
+    label {
+        margin-left: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        height: 44px;
+    }
+
+    .arrow-wrap {
+        position: relative;
+        right: 0;
+        margin-top: 32px;
+    }
+}

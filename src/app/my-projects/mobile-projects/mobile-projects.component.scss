@@ -46,12 +46,18 @@ h1 {
 }
 
 @media (max-width: 1000px) {
+
     .project-names {
-        justify-content: center;
+        padding: 0;
     }
 }
 
 @media (max-width: 750px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
     .project-names {
         padding: 0;
     }
@@ -63,5 +69,17 @@ h1 {
 }
 
 @media (max-width: 500px) {
-    
+
+    .project-names {
+        justify-content: center;
+    }
+
+    .project-names-box {
+        padding: 14px 8px;
+        font-size: 18px;
+    }
+
+    .project-name-active {
+        border-radius: 20px 20px 0 0;
+    }
 }

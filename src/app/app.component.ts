@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule, ViewportScroller } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { AboveTheFoldComponent } from "./above-the-fold/above-the-fold.component";
@@ -20,8 +20,14 @@ import { MobileProjectsComponent } from "./my-projects/mobile-projects/mobile-pr
 })
 export class AppComponent {
   title = 'wimmer-philipp';
+  screenWidth = window.innerWidth;
 
   constructor(private viewportScroller: ViewportScroller) {
     viewportScroller.setOffset([0, 120]);
+  }
+
+  @HostListener('window:resize')
+  onResize() {
+    this.screenWidth = window.innerWidth;
   }
 }

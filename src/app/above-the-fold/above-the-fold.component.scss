@@ -196,3 +196,37 @@ h2 {
         height: calc(650px * 0.75);
     }
 }
+
+@media (max-width: 1000px) {
+    .my-picture-container {
+        height: calc(1280px / 3);
+        width: calc(879px / 3);
+    }
+
+    .my-picture {
+        height: calc(1280px / 3);
+        width: calc(879px / 3);
+    }
+
+    .shape {
+        width: calc(589px * 0.65);
+        height: calc(650px * 0.65);
+    }
+}
+
+@media (max-width: 920px) {
+    .my-picture-container {
+        height: calc(1280px / 3.2);
+        width: calc(879px / 3.2);
+    }
+
+    .my-picture {
+        height: calc(1280px / 3.2);
+        width: calc(879px / 3.2);
+    }
+
+    .shape {
+        width: calc(589px * 0.6);
+        height: calc(650px * 0.6);
+    }
+}

@@ -32,10 +32,21 @@
             </div>
         </form>
         <div class="privacy-policy">
-            <img src="assets/img/contact/unchecked-box.png" alt="">
-            <p>Ich habe die
+            <button
+                class="privacy-checkbox" 
+                type="button"
+                (click)="privacyAccepted = !privacyAccepted"
+                [class.checked]="privacyAccepted"
+            >
+                <img class="checkbox-unchecked" src="assets/img/contact/unchecked-box.png" alt="">
+                <img class="checkbox-hover" src="assets/img/contact/unchecked-hover.png" alt="">
+                <img class="checkbox-checked" src="assets/img/contact/checked.png" alt="">
+                <img class="checkbox-required" src="assets/img/contact/unchecked-requiered.png" alt="">
+            </button>
+            <p>
+                Ich habe die
                 <a href="">Datenschutzrichtlinien</a>
-                gelesen und akzeptiere diese. 
+                gelesen und akzeptiere diese.
             </p>
         </div>
         <button>Senden</button>

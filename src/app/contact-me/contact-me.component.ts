@@ -9,10 +9,13 @@ import { RouterLink } from '@angular/router';
   templateUrl: './contact-me.component.html',
   styleUrl: './contact-me.component.scss'
 })
+
 export class ContactMeComponent {
   formData = {
     name: "",
     email: "",
     message: ""
   }
+
+  privacyAccepted = false;
 }

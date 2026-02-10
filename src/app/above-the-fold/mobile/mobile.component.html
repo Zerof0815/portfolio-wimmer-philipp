@@ -1,16 +1,33 @@
 <div class="max-width-container">
     <div class="above-the-fold">
+        <div class="burger-menu" [class.open]="menuOpen">
+            <div class="links-container">
+                <a (click)="menuOpen = false" [routerLink]="[]" fragment="why-me">Warum Ich</a>
+                <a (click)="menuOpen = false" [routerLink]="[]" fragment="my-skills">Skills</a>
+                <a (click)="menuOpen = false" [routerLink]="[]" fragment="my-projects">Projekte</a>
+                <a (click)="menuOpen = false" [routerLink]="[]" fragment="contact-me">Kontakt</a>
+                <div class="language">
+                    <div class="lang-bg" [ngClass]="{'active': currentLang === 'DE'}">
+                        <button (click)="setLanguage('DE')">DE</button>
+                    </div>
+                    <div class="lang-bg" [ngClass]="{'active': currentLang === 'EN'}">
+                        <button (click)="setLanguage('EN')">EN</button>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/img/atf/shape.png" alt="">
+        </div>
         <div class="logo-menu">
             <div class="logo">
                 <img src="assets/img/atf/logo-icon.png" alt="">
                 <p class="anta-font">P.Wimmer</p>
                 <p class="theme-color">Developer</p>
             </div>
-            <button>
-                <img src="assets/img/atf/menu-button.png" alt="">
+            <button (click)="toggleMenu()">
+                <img src="{{imageSource}}" alt="">
             </button>
         </div>
-        <div class="my-picture-container">
+        <div class="my-picture-container" [class.hidden]="menuOpen">
             <img class="shape shape-default" src="assets/img/atf/shape.png" alt="">
             <img class="shape shape-hover" src="assets/img/atf/shape-hover.png" alt="">
             <img class="my-picture" src="assets/img/atf/stiker-4574586_1280.png" alt="">

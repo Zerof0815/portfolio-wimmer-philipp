@@ -20,10 +20,6 @@ section {
 }
 
 @media (max-width: 1000px) {
-    .sticky-header {
-        display: none;
-    }
-
     section {
         &:not(#above-the-fold) {
             margin-bottom: 60px;

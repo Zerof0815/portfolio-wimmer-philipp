@@ -38,6 +38,7 @@ h2 {
 .shape {
     position: absolute;
     left: 0;
+    top: 40px;
     width: calc(589px * 0.9);
     height: calc(650px * 0.9);
     transition: opacity 0.2s ease-in-out;
@@ -49,9 +50,10 @@ h2 {
 }
 
 .my-picture {
-    margin-left: 42px;
-    height: calc(1280px / 2);
-    width: calc(879px / 2);
+    margin-left: 56px;
+    margin-top: 42px;
+    height: calc(1280px / 2.2);
+    width: calc(879px / 2.2);
     pointer-events: none;
 }
 
@@ -152,11 +154,14 @@ h2 {
     }
 
     .my-picture {
+        margin-left: 42px;
+        margin-top: 0;
         height: calc(1280px / 2.3);
         width: calc(879px / 2.3);
     }
 
     .shape {
+        top: unset;
         width: calc(589px * 0.8);
         height: calc(650px * 0.8);
     }

@@ -8,6 +8,9 @@ a {
 }
 
 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -20,12 +23,18 @@ button {
     }
 }
 
-.active {
-    color: rgb(248, 245, 236);
-    cursor: auto;
-    background-image: url("../../../assets/img/header/language-ellipse-icon.png");
-    background-repeat: no-repeat;
-    background-position: 50% 30%;
+.language {
+    display: flex;
+
+    .active {
+        button {
+            color: rgb(248, 245, 236);
+            cursor: auto;
+            background-image: url("../../../assets/img/header/language-ellipse-icon.png");
+            background-repeat: no-repeat;
+            background-position: 50% 30%;
+        }
+    }
 }
 
 nav {

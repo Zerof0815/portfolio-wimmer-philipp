@@ -10,5 +10,5 @@ import { RouterLink } from "@angular/router";
   styleUrl: './above-the-fold.component.scss'
 })
 export class AboveTheFoldComponent {
-
+  
 }

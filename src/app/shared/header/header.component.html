@@ -11,9 +11,13 @@
             <a [routerLink]="[]" fragment="my-projects">Projekte</a>
             <a [routerLink]="[]" fragment="contact-me">Kontakt</a>
         </div>
-        <div>
-            <button class="active">DE</button>
-            <button>EN</button>
+        <div class="language">
+            <div [ngClass]="{'active': currentLang === 'DE'}">
+                <button (click)="setLanguage('DE')">DE</button>
+            </div>
+            <div [ngClass]="{'active': currentLang === 'EN'}">
+                <button (click)="setLanguage('EN')">EN</button>
+            </div>
         </div>
     </nav>
 </div>

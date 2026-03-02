@@ -13,7 +13,11 @@
 <div class="max-width-container">
   <section id="why-me"><app-why-me></app-why-me></section>
   <section id="my-skills"><app-my-skills></app-my-skills></section>
-  <section id="my-projects"><app-mobile-projects></app-mobile-projects></section>
+  @if (screenWidth >= 1000) {
+    <section id="my-projects"><app-my-projects></app-my-projects></section>
+  } @else {
+    <section id="my-projects"><app-mobile-projects></app-mobile-projects></section>
+  }
   <section id="contact-me"><app-contact-me></app-contact-me></section>
 </div>
 

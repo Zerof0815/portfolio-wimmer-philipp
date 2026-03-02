@@ -7,12 +7,18 @@ p {
     max-width: 690px;
 }
 
-button {
+.background-button-live,
+.background-button-github {
     padding: 16px 24px;
     border: solid 2px rgb(137, 188, 217);
     border-radius: 30px;
-    color: rgb(137, 188, 217);
+    text-decoration: none;
     font-weight: 500;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out,
+        border-color 0.25s ease-in-out,
+        color 0.25s ease-in-out;
 }
 
 .content {
@@ -89,6 +95,7 @@ button {
 }
 
 .background-button-github {
+    color: rgb(137, 188, 217);
     transition: background-color 0.25s ease-in-out;
 
     &:hover {

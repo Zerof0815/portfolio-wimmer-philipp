@@ -13,16 +13,16 @@
         <div class="picture-menu-wrapper">
             <div class="burger-menu" [class.open]="menuOpen">
                 <div class="links-container">
-                    <a (click)="menuOpen = false" [routerLink]="[]" fragment="why-me">Warum Ich</a>
-                    <a (click)="menuOpen = false" [routerLink]="[]" fragment="my-skills">Skills</a>
-                    <a (click)="menuOpen = false" [routerLink]="[]" fragment="my-projects">Projekte</a>
-                    <a (click)="menuOpen = false" [routerLink]="[]" fragment="contact-me">Kontakt</a>
+                    <a (click)="menuOpen = false" [routerLink]="[]" fragment="why-me">{{ texts[languageService.currentLang()].why}}</a>
+                    <a (click)="menuOpen = false" [routerLink]="[]" fragment="my-skills">{{ texts[languageService.currentLang()].skills}}</a>
+                    <a (click)="menuOpen = false" [routerLink]="[]" fragment="my-projects">{{ texts[languageService.currentLang()].projects}}</a>
+                    <a (click)="menuOpen = false" [routerLink]="[]" fragment="contact-me">{{ texts[languageService.currentLang()].contact}}</a>
                     <div class="language">
-                        <div class="lang-bg" [ngClass]="{'active': currentLang === 'DE'}">
-                            <button (click)="setLanguage('DE')">DE</button>
+                        <div class="lang-bg" [ngClass]="{'active': languageService.currentLang() === 'DE'}">
+                            <button (click)="languageService.setLanguage('DE')">DE</button>
                         </div>
-                        <div class="lang-bg" [ngClass]="{'active': currentLang === 'EN'}">
-                            <button (click)="setLanguage('EN')">EN</button>
+                        <div class="lang-bg" [ngClass]="{'active': languageService.currentLang() === 'EN'}">
+                            <button (click)="languageService.setLanguage('EN')">EN</button>
                         </div>
                     </div>
                 </div>

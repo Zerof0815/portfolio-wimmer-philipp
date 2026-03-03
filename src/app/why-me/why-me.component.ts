@@ -9,5 +9,5 @@ import { RouterLink } from '@angular/router';
   styleUrl: './why-me.component.scss'
 })
 export class WhyMeComponent {
-
+  
 }

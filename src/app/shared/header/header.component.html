@@ -6,17 +6,17 @@
             <p class="dark-theme-color">Developer</p>
         </div>
         <div class="links-container">
-            <a [routerLink]="[]" fragment="why-me">Warum Ich</a>
-            <a [routerLink]="[]" fragment="my-skills">Skills</a>
-            <a [routerLink]="[]" fragment="my-projects">Projekte</a>
-            <a [routerLink]="[]" fragment="contact-me">Kontakt</a>
+            <a [routerLink]="[]" fragment="why-me">{{ texts[languageService.currentLang()].why }}</a>
+            <a [routerLink]="[]" fragment="my-skills">{{ texts[languageService.currentLang()].skills }}</a>
+            <a [routerLink]="[]" fragment="my-projects">{{ texts[languageService.currentLang()].projects }}</a>
+            <a [routerLink]="[]" fragment="contact-me">{{ texts[languageService.currentLang()].contact }}</a>
         </div>
         <div class="language">
-            <div [ngClass]="{'active': currentLang === 'DE'}">
-                <button (click)="setLanguage('DE')">DE</button>
+            <div [ngClass]="{'active': languageService.currentLang() === 'DE'}">
+                <button (click)="languageService.setLanguage('DE')">DE</button>
             </div>
-            <div [ngClass]="{'active': currentLang === 'EN'}">
-                <button (click)="setLanguage('EN')">EN</button>
+            <div [ngClass]="{'active': languageService.currentLang() === 'EN'}">
+                <button (click)="languageService.setLanguage('EN')">EN</button>
             </div>
         </div>
     </nav>

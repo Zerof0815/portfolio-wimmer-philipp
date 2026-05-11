@@ -1,5 +1,5 @@
 <div id="my-projects" class="my-projects">
-    <h1>Meine Projekte</h1>
+    <h1>{{texts[languageService.currentLang()].myProjects}}</h1>
     <div class="project-names">
         @for (project of projects; track $index) {
             <button
@@ -7,7 +7,7 @@
                 [ngClass]="{'project-name-active': selectedProjectId === project.id}"
                 (click)="selectProject(project.id)"
             >
-                {{project.id}}. {{project.name}}
+                {{project.id}}. {{getProjectText(project.id)}}
             </button>
         }
     </div>

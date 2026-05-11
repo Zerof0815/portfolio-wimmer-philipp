@@ -4,14 +4,14 @@
             <img src="assets/img/my-projects/ellipse.png" alt="">
             <div class="gap">
                 <p>
-                    This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.
+                    {{texts[languageService.currentLang()].aboutText}}
                 </p>
             </div>
         </div>
     </div>
     <div class="project-window">
         <div class="technologies-container">
-            <p>Technologien</p>
+            <p>{{texts[languageService.currentLang()].technologyies}}</p>
             <div class="technologies">
                 <img src="assets/img/my-skills/html-icon.png" alt="">
                 <img src="assets/img/my-skills/javascript-icon.png" alt="">
@@ -21,9 +21,9 @@
         <img src="assets/img/my-projects/Screenshot project.png" alt="">
     </div>
     <div class="technologies-mobile">
-        <h3>Ongoing Project</h3>
+        <h3>{{texts[languageService.currentLang()].projectName}}</h3>
         <div>
-            <p>Technologien: Angular, Typescript, Firebase</p>
+            <p>{{texts[languageService.currentLang()].technologiesText}}</p>
         </div>
     </div>
 </div>

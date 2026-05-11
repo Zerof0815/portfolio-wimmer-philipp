@@ -1,5 +1,5 @@
 <div class="my-skills">
-    <h1>Meine Skills</h1>
+    <h1>{{texts[languageService.currentLang()].mySkills}}</h1>
     <div class="content">
         <div class="skill-icons">
             @for (icon of skillIcons; track icon) {
@@ -9,9 +9,9 @@
         <div class="currently-learning">
             <img class="ellipse" src="assets/img/my-skills/ellipse.png" alt="">
             <div class="learning-text">
-                <p class="c-blue">Aktuell lerne ich</p>
+                <p class="c-blue">{{ texts[languageService.currentLang()].currentlyLearning}}</p>
                 <img src="assets/img/atf/stiker-4574586_1280.png" alt="">
-                <p>Show that you are motivated to continually improve your skills, implement innovative solutions and stay abreast of new technologies.</p>
+                <p>{{texts[languageService.currentLang()].currentlyLearningText}}</p>
             </div>
         </div>
     </div>

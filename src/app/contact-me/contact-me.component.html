@@ -1,33 +1,33 @@
 <div class="contact-me">
-    <h1>Kontakt</h1>
+    <h1>{{texts[languageService.currentLang()].heading}}</h1>
     <img src="" alt="">
     <div class="contact-container">
         <div class="contact-data">
-            <p class="width-50pc">Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work. Example: Feel free to get in touch with job offers or opportunities such as: ...</p>
+            <p class="width-50pc">{{texts[languageService.currentLang()].description}}</p>
             <div class="email-phone-container">
-                <a class="email" href="">
+                <a class="email" href="mailto:wimmer.philipp@gmx.com">
                     <img src="assets/img/contact/email-icon.png" alt="">
-                    E-mail: wimmer.philipp&#64;gmx.com
+                    {{texts[languageService.currentLang()].emailLabel}} wimmer.philipp&#64;gmx.com
                 </a>
-                <a class="phone" href="">
+                <a class="phone" href="tel:+436604488501">
                     <img src="assets/img/contact/phone-icon.png" alt="">
-                    Tel: +43660/4488501
+                    {{texts[languageService.currentLang()].phoneLabel}} +43660/4488501
                 </a>
             </div>
         </div>
         <form class="contact-form">
             <div class="input-row">
                 <div class="input-group">
-                    <label for="name">Dein Name</label>
+                    <label for="name">{{texts[languageService.currentLang()].nameLabel}}</label>
                     <input type="text" id="name" name="name" [(ngModel)]="formData.name" required>
                 </div>
                 <div class="input-group">
-                    <label for="email">Deine Email</label>
+                    <label for="email">{{texts[languageService.currentLang()].emailFieldLabel}}</label>
                     <input type="email" id="email" name="email" [(ngModel)]="formData.email" required>
                 </div>
             </div>
             <div class="input-group">
-                <label for="message">Deine Nachricht</label>
+                <label for="message">{{texts[languageService.currentLang()].messageLabel}}</label>
                 <textarea id="message" name="message" rows="5" [(ngModel)]="formData.message" required></textarea>
             </div>
         </form>
@@ -44,12 +44,12 @@
                 <img class="checkbox-required" src="assets/img/contact/unchecked-requiered.png" alt="">
             </button>
             <p>
-                Ich habe die
-                <a href="">Datenschutzrichtlinien</a>
-                gelesen und akzeptiere diese.
+                {{texts[languageService.currentLang()].privacyText1}}
+                <a href="">{{texts[languageService.currentLang()].privacyLink}}</a>
+                {{texts[languageService.currentLang()].privacyText2}}
             </p>
         </div>
-        <button>Senden</button>
+        <button>{{texts[languageService.currentLang()].sendButton}}</button>
     </div>
     <div class="arrow-wrap">
         <a [routerLink]="[]" fragment="above-the-fold">

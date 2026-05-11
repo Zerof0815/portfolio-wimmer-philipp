@@ -1,5 +1,5 @@
 <div class="why-me">
-    <h1>Warum ich</h1>
+    <h1>{{ texts[languageService.currentLang()].whyMe }}</h1>
     <div class="why-me-section">
         <div class="location">
             <div class="complete-icon">
@@ -7,12 +7,12 @@
                 <img class="icon-ellipse" src="assets/img/why-me/icon-ellipse.png" alt="">
             </div>
             <p>
-                <span class="blue-text">Ich bin</span> in Eisenstadt ansässig
+                <span class="blue-text">{{ texts[languageService.currentLang()].blueTextLocation }}</span> {{ texts[languageService.currentLang()].location }}
             </p>
         </div>
         <div class="why-me-text">
             <p>
-                Was mich am Coden wahnsinnig begeistert, ist, dass man etwas aus dem Nichts erschafft und seine Kreativität voll ausleben kann. Durch mein analytisches Denken und den Drang, Neues zu lernen, kann ich mich in diesem Bereich komplett entfalten.
+                {{ texts[languageService.currentLang()].why }}
             </p>
             <button [routerLink]="[]" fragment="contact-me">Let's talk</button>
         </div>
